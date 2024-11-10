@@ -1,0 +1,146 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string name;
+    cout<<"Enter your name:";
+    cin>>name;
+    
+    string roll;
+    cout<<"Enter your Roll Number:";
+    cin>>roll;
+    
+    float javamarks;
+    cout<<"Enter your JAVA marks:";
+    cin>>javamarks;
+    if (javamarks < 1 || javamarks > 100) {
+        cout << "Invalid Input.Enter marks between 1-100" << endl;
+    } 
+    
+    float Cmarks;
+    cout<<"Enter your C++ marks:";
+    cin>>Cmarks;
+    if(Cmarks<1 || Cmarks>100) {
+        cout<<"Invalid Input.Enter marks between 1-100"<<endl;
+    } 
+    
+    float gomarks;
+    cout<<"Enter your GO marks:";
+    cin>>gomarks;
+    if(gomarks<1 || gomarks>100) {
+        cout<<"Invalid Input.Enter marks between 1-100"<<endl;
+    } 
+    
+    float rubymarks;
+    cout<<"Enter your RUBY marks:";
+    cin>>rubymarks;
+    if(rubymarks<1 || rubymarks>100) {
+        cout<<"Invalid Input.Enter marks between 1-100"<<endl;
+    } 
+    
+    float cmarks;
+    cout<<"Enter your C# marks:";
+    cin>>cmarks;
+    if(cmarks<1 || cmarks>100) {
+        cout<<"Invalid Input.Enter marks between 1-100"<<endl;
+    } 
+    
+    float pythonmarks;
+    cout<<"Enter your PYTHON marks:";
+    cin>>pythonmarks;
+    if(pythonmarks<1 || pythonmarks>100) {
+        cout<<"Invalid Input.Enter marks between 1-100"<<endl;
+    } 
+    
+    if(javamarks<35){
+        cout<<"JAVA = "<<javamarks<<"/100 F"<<endl;
+    }
+    else if(javamarks>100){
+        cout<<"enter marks between 1-100"<<endl;
+    }
+    else{
+        cout<<"JAVA = "<<javamarks<<"/100 "<<endl;
+    }
+    
+    if(Cmarks<35){
+        cout<<"C++ = "<<Cmarks<<"/100 F"<<endl;
+    }
+    else if(Cmarks>100){
+        cout<<"enter marks between 1-100"<<endl;
+    }
+    else{
+        cout<<"C++ = "<<Cmarks<<"/100 "<<endl;
+    }
+    
+    if(gomarks<35){
+        cout<<"GO = "<<gomarks<<"/100 F"<<endl;
+    }
+    else if(gomarks>100){
+        cout<<"enter marks between 1-100"<<endl;
+    }
+    else{
+        cout<<"GO = "<<gomarks<<"/100 "<<endl;
+    }
+    
+    if(rubymarks<35){
+        cout<<"RUBY = "<<rubymarks<<"/100 F"<<endl;
+    }
+    else if(rubymarks>100){
+        cout<<"enter marks between 1-100"<<endl;
+    }
+    else{
+        cout<<"RUBY = "<<rubymarks<<"/100 "<<endl;
+    }
+    
+    if(cmarks<35){
+        cout<<"C# = "<<cmarks<<"/100 F"<<endl;
+    }
+    else if(cmarks>100){
+        cout<<"enter marks between 1-100"<<endl;
+    }
+    else{
+        cout<<"C# = "<<cmarks<<"/100 "<<endl;
+    }
+    
+    if(pythonmarks<35){
+        cout<<"PYTHON = "<<pythonmarks<<"/100 F"<<endl;
+    }
+    else if(pythonmarks>100){
+        cout<<"enter marks between 1-100"<<endl;
+    }
+    else{
+        cout<<"PYTHON = "<<pythonmarks<<"/100 "<<endl;
+    }
+    
+    float total;
+    total=javamarks+Cmarks+gomarks+rubymarks+cmarks+pythonmarks;
+    cout<<"Total = "<<total<<"/600"<<endl;
+    
+    float percentage;
+    percentage=(total/600)*100;
+    if(percentage<35 || javamarks<35 || Cmarks<35 || gomarks<35 || rubymarks<35 || cmarks<35 || pythonmarks<35){
+        cout<<"Percentage = "<<percentage<<"% FAIL"<<endl;
+    }
+    else{
+        cout<<"Percentage = "<<percentage<<"% PASS"<<endl;
+    }
+    
+    if(percentage>=35){
+        cout<<"Grading System"<<endl;
+    }
+    
+    if(percentage>=80 && percentage<=100 ){
+        cout<<"80 - 100 = Grade A"<<endl;
+    }
+    else if(percentage>=60 && percentage<=80 ){
+        cout<<"60 - 80 = Grade B"<<endl;
+    }
+    else if(percentage>=35 && percentage<=60 ){
+        cout<<"35 - 60 = Grade C"<<endl;
+    }
+    else{
+        cout<<"No Grade as FAILED"<<endl;
+    }
+    
+    return 0;
+    
+}
