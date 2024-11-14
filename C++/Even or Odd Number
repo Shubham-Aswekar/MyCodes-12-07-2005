@@ -6,10 +6,10 @@ int main(){
     cin>>number;
     
     if(number%2==0){
-        cout<<"Even Number"<<endl;
+        cout<<"your number "<<number<<" is Even"<<endl;
     }
     else{
-        cout<<"Odd Number"<<endl;
+        cout<<"your number "<<number<<" is Odd"<<endl;
     }
     return 0;
 }
