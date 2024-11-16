@@ -69,18 +69,12 @@ int main(){
     if(javamarks<35){
         cout<<"JAVA = "<<javamarks<<"/100 F"<<endl;
     }
-    else if(javamarks>100){
-        cout<<"enter marks between 1-100"<<endl;
-    }
     else{
         cout<<"JAVA = "<<javamarks<<"/100 "<<endl;
     }
     
     if(Cmarks<35){
         cout<<"C++ = "<<Cmarks<<"/100 F"<<endl;
-    }
-    else if(Cmarks>100){
-        cout<<"enter marks between 1-100"<<endl;
     }
     else{
         cout<<"C++ = "<<Cmarks<<"/100 "<<endl;
@@ -89,18 +83,12 @@ int main(){
     if(gomarks<35){
         cout<<"GO = "<<gomarks<<"/100 F"<<endl;
     }
-    else if(gomarks>100){
-        cout<<"enter marks between 1-100"<<endl;
-    }
     else{
         cout<<"GO = "<<gomarks<<"/100 "<<endl;
     }
     
     if(rubymarks<35){
         cout<<"RUBY = "<<rubymarks<<"/100 F"<<endl;
-    }
-    else if(rubymarks>100){
-        cout<<"enter marks between 1-100"<<endl;
     }
     else{
         cout<<"RUBY = "<<rubymarks<<"/100 "<<endl;
@@ -109,18 +97,12 @@ int main(){
     if(cmarks<35){
         cout<<"C# = "<<cmarks<<"/100 F"<<endl;
     }
-    else if(cmarks>100){
-        cout<<"enter marks between 1-100"<<endl;
-    }
     else{
         cout<<"C# = "<<cmarks<<"/100 "<<endl;
     }
     
     if(pythonmarks<35){
         cout<<"PYTHON = "<<pythonmarks<<"/100 F"<<endl;
-    }
-    else if(pythonmarks>100){
-        cout<<"enter marks between 1-100"<<endl;
     }
     else{
         cout<<"PYTHON = "<<pythonmarks<<"/100 "<<endl;
