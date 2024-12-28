@@ -1,0 +1,78 @@
+#include<iostream>
+using namespace std;
+
+class Student{
+    
+    public : int marks(int java, int cpp, int python){
+        cout<<"JAVA MARKS: "<< java<<endl;
+        cout<<"CPP MARKS: "<<cpp<<endl;
+        cout<<"PYTHON MARKS: "<<python<<endl;
+        return 0;
+    }
+    
+    public : int totalmarks(int java, int cpp, int python){
+        
+        int total=java+cpp+python;
+        cout<<"Total : "<<total<<endl;
+        return total;
+    }
+    
+    public : float percentage(int java, int cpp, int python){
+         int total=java+cpp+python;
+        float percent=(float(total)/300)*100;
+        
+        return percent;
+    }
+    
+    public : char grade(int java, int cpp, int python){
+        int total=java+cpp+python;
+        float percent=(float(total)/300)*100;
+        if(percent<35 || cpp<35 || java<35 || python<35){
+        cout<<"Percentage = "<<percent<<"% FAIL"<<endl;
+        
+        
+    }
+    else{
+        cout<<"Percentage = "<<percent<<"% PASS"<<endl;
+    }
+    cout<<endl;
+    
+    if(percent>=35){
+        cout<<"Grading System"<<endl;
+    }
+    
+    if(percent>=80 && percent<=100 ){
+        cout<<"80 - 100 = Grade A"<<endl;
+    }
+    else if(percent>=60 && percent<=80 ){
+        cout<<"60 - 80 = Grade B"<<endl;
+    }
+    else if(percent>=35 && percent<=60 ){
+        cout<<"35 - 60 = Grade C"<<endl;
+    }
+    else{
+        cout<<"No Grade as FAILED"<<endl;
+    }
+    }
+};
+
+int main(){
+    int java,cpp,python;
+    Student s;
+    cout<<"enter JAVA marks: ";
+    cin>>java;
+    cout<<"enter CPP marks: ";
+    cin>>cpp;
+    cout<<"enter PYTHON marks: ";
+    cin>>python;
+    cout<<endl;
+    s.marks(java,cpp,python);
+    
+   
+  
+   s.totalmarks(java,cpp,python);
+   
+   s.percentage(java,cpp,python);
+   
+   s.grade(java,cpp,python);
+}
