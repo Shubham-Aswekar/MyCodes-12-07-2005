@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        sub1 = prompt("Enter the marks of subject 1");
+        sub2 = prompt("Enter the marks of subject 2");
+        sub3 = prompt("Enter the marks of subject 3");
+        sub4 = prompt("Enter the marks of subject 4");
+        document.write("<br>marks of subject 1 is ",+sub1);
+        document.write("<br>marks of subject 2 is ",+sub2);
+        document.write("<br>marks of subject 3 is ",+sub3);
+        document.write("<br>marks of subject 4 is ",+sub4);
+        total = +sub1 + +sub2 + +sub3 + +sub4;
+        document.write("<br> Total marks is ",+total);
+        percent=(total/400)*100;
+        document.write("<br> percentage is ",+percent);
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
