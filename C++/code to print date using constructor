@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class myClass{
+    private:
+    int day,month,year;
+    
+    public:
+    myClass(){
+        cout<<"enter day: ";
+        cin>>day;
+        cout<<"enter month: ";
+        cin>>month;
+        cout<<"enter year: ";
+        cin>>year;
+    }
+    void display(){
+        cout<<"Date is "<<day<<"-"<<month<<"-"<<year<<endl;
+    }
+};
+int main(){
+    myClass obj1;
+    obj1.display();
+    return 0;
+}
