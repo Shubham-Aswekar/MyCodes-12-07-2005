@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class myClass{
+    public:
+    string name,model;
+    int year;
+    
+    myClass(string n,string m, int y){
+        name = n;
+        model = m;
+        year = y;
+    }
+};
+int main(){
+    myClass obj1("Mercedes","AMG",2024);
+    myClass obj2("BMW","X5",2025);
+    
+    cout<<obj1.name<<" "<<obj1.model<<" "<<obj1.year<<endl;
+    cout<<obj2.name<<" "<<obj2.model<<" "<<obj2.year<<endl;
+    
+    return 0;
+}
