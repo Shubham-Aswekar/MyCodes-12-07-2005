@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class myClass{
+    private:
+    float length,breadth,area;
+    
+    public:
+    myClass(){
+        cout<<"enter length: ";
+        cin>>length;
+        cout<<"enter breadth: ";
+        cin>>breadth;
+    }
+    void result(){
+            area=length*breadth;
+            cout<<"area is "<<area<<endl;
+        }
+};
+int main(){
+    myClass obj1;
+    obj1.result();
+    return 0;
+}
