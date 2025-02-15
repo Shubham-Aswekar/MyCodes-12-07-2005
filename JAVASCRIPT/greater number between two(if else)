@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+
+            number1 = document.getElementById("number1").value;
+            number2 = document.getElementById("number2").value;
+
+            if(number1>number2){
+                alert("Number1 is greater");
+            }else {
+                alert("Number2 is greater");
+            }
+        }
+    </script>
+</head>
+<body>
+   <label for="text">Number1:</label>
+   <input type="text" id="number1" name="number1">
+   <br>
+   <br>
+   <label for="text">Number2:</label>
+   <input type="text" id="number2" name="number2">
+   <button onclick="check()">Submit</button>
+</body>
+</html>
