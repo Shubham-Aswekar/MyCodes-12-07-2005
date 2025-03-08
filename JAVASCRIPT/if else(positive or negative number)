@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            num=document.getElementById("number").value;
+            if(num%2==0){
+                alert("positive number");
+            }
+            else{
+                alert("negative number");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <label for="number">Number:</label>
+    <input type="text" id="number" name="number">
+
+    <button onclick="check()">Check</button>
+</body>
+</html>
